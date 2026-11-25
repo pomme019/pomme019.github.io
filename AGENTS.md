@@ -7,7 +7,7 @@ Este archivo es el contexto permanente del repo. Léelo antes de tocar `index.ht
 Portafolio web de una sola página para **Isabel Cock**, artista visual (animación experimental, pintura, grabado, ilustración). Sustituye al portafolio genérico del taller por una pieza editorial con identidad propia: **NÁCAR / SEÑAL**.
 
 - Repo: `pomme019/pomme019.github.io` (GitHub Pages).
-- URL prevista: <https://pomme019.github.io/>.
+- URL publicada: <https://pomme019.github.io/> (GitHub Pages, 26 nov 2026).
 - Es un repo independiente dentro de `Pagina/`. El `AGENTS.md` padre del TFM dice “aquí no hay código”: **eso no aplica dentro de esta carpeta**.
 - No hay build, Node, npm ni frameworks. Todo vive en `index.html` (CSS y JS inline) + `imagenes/`.
 - Git está instalado en `C:\Program Files\Git\cmd\git.exe`, pero no en PATH; `gh` no está. Se puede commitear/pushear con esa ruta o publicar desde la web de GitHub / Netlify Drop.
