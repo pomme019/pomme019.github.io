@@ -10,7 +10,7 @@ Portafolio web de una sola página para **Isabel Cock**, artista visual (animaci
 - URL prevista: <https://pomme019.github.io/>.
 - Es un repo independiente dentro de `Pagina/`. El `AGENTS.md` padre del TFM dice “aquí no hay código”: **eso no aplica dentro de esta carpeta**.
 - No hay build, Node, npm ni frameworks. Todo vive en `index.html` (CSS y JS inline) + `imagenes/`.
-- No hay `git` ni `gh` en PATH. La publicación se hace desde la web de GitHub o con Netlify Drop.
+- Git está instalado en `C:\Program Files\Git\cmd\git.exe`, pero no en PATH; `gh` no está. Se puede commitear/pushear con esa ruta o publicar desde la web de GitHub / Netlify Drop.
 
 ## Guía del taller
 

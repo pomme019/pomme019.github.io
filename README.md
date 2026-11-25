@@ -12,6 +12,8 @@ Portafolio de **Isabel Cock** — animación experimental, pintura, grabado e il
 
 Subir `index.html`, `imagenes/`, `favicon.svg`, `robots.txt` y `sitemap.xml` a la raíz de la rama `main`. GitHub Pages publica automáticamente desde la raíz.
 
+El repo ya tiene un commit local con el sitio. Para publicarlo, haz push a `main` (Git está en `C:\Program Files\Git\cmd\git.exe`) o sube los archivos desde la web de GitHub.
+
 ## Editar
 
 1. Cambiar textos o fichas en `CONTENIDO.md`.
