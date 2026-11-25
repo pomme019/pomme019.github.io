@@ -41,7 +41,7 @@ La web parte de la investigación de Isabel: animación experimental, redes que 
 
 - **Inicio:** nombre, disciplina, retrato/fotograma y una frase; red animada y marquesina de conceptos.
 - **Obra:** 8 piezas en cuadrícula editorial, con ficha y lightbox accesible.
-- **Reel:** extracto de animación experimental en flipbook de 6 fotogramas.
+- **Reel:** extracto de *Rotoscopia de la lluvia* en flipbook de 6 fotogramas.
 - **Sobre:** statement, bio y disciplinas, con un detalle de obra como imagen.
 - **CV:** formación, experiencia, proyectos, habilidades e idiomas; botón de impresión.
 - **Contacto:** email, ubicación y footer con crédito de IA.
@@ -64,23 +64,25 @@ Originales (no mover ni renombrar):
 
 - `C:\Users\Juliana\Pictures\Mis cosas\grado\` — GIFs de animación experimental (2023).
 - `C:\Users\Juliana\Pictures\Master Granada\1. Materias\2. Medios Audiovisuales II\Trabajos\Final\` — storyboard, color, videos.
-- `C:\Users\Juliana\Pictures\Arte\` — pinturas; hay memes y referencias mezcladas.
-- `C:\Users\Juliana\Pictures\Mis cosas\Grabado\`, `Fanzine\`, `Masivo\`, `Animaciones\`.
+- `C:\Users\Juliana\Pictures\Mis cosas\14.PNG`, `10.PNG`, `13.PNG` — pinturas e ilustración propias.
+- `C:\Users\Juliana\Pictures\Mis cosas\2.mp4` — rotoscopia de la lluvia.
+- `C:\Users\Juliana\Pictures\Mis cosas\Grabado\` — serie de grabado.
+- `C:\Users\Juliana\Pictures\Mis cosas\Animaciones\` — contexto de animación.
 
 Copias optimizadas en `imagenes/`:
 
 | Archivo | Origen | Uso |
 |---|---|---|
 | `hero.jpg` | `grado/1A.gif`, frame 4 | Hero |
-| `reel-01…06.jpg` | `grado/A5.gif`, frames 0, 4, 6, 9, 12, 16 | Flipbook |
 | `obra-01.jpg` | `grado/3.png` | Estudio de manos |
-| `obra-02.jpg` | `Arte/432668455…jpg` | Pintura I |
-| `obra-03.jpg` | `Arte/551187527…jpg` | Pintura II |
-| `obra-04.jpg` | `Arte/465987992…jpg` | Instalación |
-| `obra-05.jpg` | `Grabado/FinalMesa de trabajo 15.jpg` | Grabado |
-| `obra-06.jpg` | `Fanzine/jpg/1.jpg` | Ilustración |
-| `obra-07.jpg` | `grado/1A.gif`, frame 7 | Animación |
+| `obra-02.jpg` | `Mis cosas/14.PNG` | El payaso |
+| `obra-03.jpg` | `Mis cosas/2.mp4`, frame 0.8 s | Rotoscopia de la lluvia (fotograma) |
+| `obra-04.jpg` | `Grabado/FinalMesa de trabajo 15.jpg` | Figuras sentadas |
+| `obra-05.jpg` | `Mis cosas/10.PNG` | Retrato con burbujas |
+| `obra-06.jpg` | `Mis cosas/13.PNG` | Paisaje del puente |
+| `obra-07.jpg` | `grado/1A.gif`, frame 7 | Pintar el tiempo |
 | `obra-08.jpg` | `Medios Audiovisuales II/.../story.png` | Investigación visual |
+| `rain-01…06.jpg` | `Mis cosas/2.mp4`, frames 0.2/0.8/1.8/2.5/3.2/6.5 s | Flipbook |
 | `sobre.jpg` | detalle de `grado/3.png` | Sobre |
 | `og.jpg` | recorte de `hero.jpg` | Open Graph |
 
@@ -111,8 +113,8 @@ Arrastrar la carpeta completa `pomme019.github.io` (con `index.html` e `imagenes
 
 ## Pendientes
 
-- [ ] Confirmar que las tres pinturas de `Arte` son obra propia.
-- [ ] Confirmar derechos del cartel de `Masivo` y del proyecto `Sasha`.
+- [ ] Confirmar autoría de El payaso, Retrato con burbujas y Paisaje del puente.
+- [ ] Confirmar año, técnica y dimensiones de las obras nuevas.
 - [ ] Facilitar Instagram.
 - [ ] Institución y año del Grado en Bellas Artes.
 - [ ] Títulos, años, técnicas y dimensiones definitivos.
