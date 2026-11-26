@@ -94,25 +94,25 @@ Isabel Cock (Colombia, afincada en Granada) es artista visual y estudiante del M
 - Descripción: Ocho variaciones de una figura que se abraza, impresas en blanco y negro.
 - Estado: título descriptivo; confirmar datos.
 
-### 05. Retrato con burbujas
+### 05. El laberinto
 
 - Archivo: `imagenes/obra-05.jpg`
 - Categoría: Ilustración digital
-- Año: 2022
+- Año: 2025
 - Técnica: Ilustración digital
-- Dimensiones: 872 × 650 px
-- Descripción: Un rostro de ojos cerrados y cabello ondulado se rodea de burbujas azules; el dibujo se vuelve superficie y refugio.
-- Estado: título descriptivo; confirmar.
+- Dimensiones: 1600 × 1199 px
+- Descripción: Una figura sube a una mano de piedra y mira un laberinto infinito frente al mar; la salida es una forma de mirar.
+- Estado: confirmar autoría y datos.
 
-### 06. Paisaje del puente
+### 06. Sombras
 
 - Archivo: `imagenes/obra-06.jpg`
-- Categoría: Pintura
+- Categoría: Ilustración
 - Año: 2022
-- Técnica: Pintura
-- Dimensiones: 870 × 611 px
-- Descripción: Un puente de piedra, agua y vegetación; el paisaje como ejercicio de atención y color.
-- Estado: título descriptivo; confirmar.
+- Técnica: Ilustración / dibujo digital
+- Dimensiones: 1200 × 1520 px
+- Descripción: Una figura diminuta camina bajo la sombra de un ser enorme; el miedo se vuelve paisaje y presencia.
+- Estado: confirmar autoría y datos.
 
 ### 07. Pintar el tiempo
 
@@ -134,6 +134,12 @@ Isabel Cock (Colombia, afincada en Granada) es artista visual y estudiante del M
 - Descripción: Células, neuronas, micelio y redes: un mapa de procesos de crecimiento y transformación.
 - Estado: incluida en Obra como investigación visual.
 
+## Movimiento en la web
+
+- **Pintar el tiempo**: 8 fotogramas (`imagenes/motion-pintar-01…08.jpg`) extraídos de `grado/1A.gif`; se reproducen con el botón de play de la ficha.
+- **Rotoscopia de la lluvia**: 6 fotogramas (`imagenes/rain-01…06.jpg`) extraídos de `Mis cosas/2.mp4`; se reproducen en la ficha y en el reel.
+- Los GIF/MP4 originales pesan entre 5 y 52 MB; no se incrustan para no romper la carga. La web usa secuencias de fotogramas optimizadas.
+
 ## Reel
 
 - Título: Rotoscopia de la lluvia / extracto
@@ -152,7 +158,7 @@ Isabel Cock (Colombia, afincada en Granada) es artista visual y estudiante del M
 
 ## Checklist de entrega
 
-- [ ] Confirmar autoría de El payaso, Retrato con burbujas y Paisaje del puente.
+- [ ] Confirmar autoría de El payaso, El laberinto y Sombras.
 - [ ] Confirmar año, técnica y dimensiones de las obras nuevas.
 - [ ] Instagram.
 - [ ] Institución y año del Grado.

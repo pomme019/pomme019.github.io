@@ -134,7 +134,10 @@
     .work--small{grid-column:span 4}
     .work--tall{grid-column:span 4}
     .work--process{grid-column:span 7}
+    .work__media{position:relative}
     .work__button{display:block;width:100%;padding:0;border:0;background:var(--paper-2);cursor:zoom-in;position:relative;overflow:hidden;text-align:left}
+    .work__play{position:absolute;right:1rem;bottom:1rem;z-index:4;width:44px;height:44px;border-radius:50%;border:1px solid var(--acid);background:rgba(8,7,10,.66);color:var(--acid);display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+    .work__play:hover{background:var(--acid);color:var(--ink);transform:scale(1.05)}
     .work__button img{width:100%;height:auto;transition:transform .9s var(--ease),filter .5s}
     .work__button:hover img,.work__button:focus-visible img{transform:scale(1.025);filter:saturate(1.08) contrast(1.03)}
     .work__button::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,7,10,.55),transparent 45%);opacity:0;transition:opacity .4s}
@@ -163,7 +166,7 @@
     .reel__play{position:absolute;left:1rem;bottom:1rem;z-index:3;width:52px;height:52px;border-radius:50%;border:1px solid var(--acid);background:rgba(8,7,10,.56);color:var(--acid);display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s,transform .2s}
     .reel__play:hover{background:var(--acid);color:var(--ink);transform:scale(1.04)}
     .play-icon{display:block;width:0;height:0;border-left:12px solid currentColor;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
-    .reel__play.is-playing .play-icon{width:10px;height:14px;border:0;border-left:4px solid currentColor;border-right:4px solid currentColor;margin-left:0}
+    .is-playing .play-icon{width:10px;height:14px;border:0;border-left:4px solid currentColor;border-right:4px solid currentColor;margin-left:0}
     .reel__counter{position:absolute;right:1rem;bottom:1.15rem;z-index:3;font-size:.62rem;letter-spacing:.16em;color:var(--paper);mix-blend-mode:difference}
     .reel__ticks{display:flex;gap:4px;margin-top:.8rem}
     .reel__ticks span{height:2px;flex:1;background:rgba(242,239,230,.18);transition:background .2s}
@@ -428,13 +431,18 @@
           </figure>
 
           <figure class="work work--half" data-reveal>
-            <button class="work__button" type="button" aria-label="Ampliar: Rotoscopia de la lluvia"
-              data-title="Rotoscopia de la lluvia" data-year="2021" data-technique="Rotoscopia digital / animación"
-              data-dimensions="1280 × 720 px" data-category="Animación / rotoscopia"
-              data-description="Una mano bajo la lluvia se cubre de líneas y manchas de color; la imagen se pinta y se deshace en el mismo gesto.">
-              <img src="imagenes/obra-03.jpg" alt="Fotograma de una rotoscopia: una mano bajo la lluvia con líneas blancas dibujadas sobre la piel." width="1280" height="720" loading="lazy" decoding="async">
-              <span class="work__view" aria-hidden="true">Ampliar ↗</span>
-            </button>
+            <div class="work__media">
+              <button class="work__button" type="button" aria-label="Ampliar: Rotoscopia de la lluvia"
+                data-title="Rotoscopia de la lluvia" data-year="2021" data-technique="Rotoscopia digital / animación"
+                data-dimensions="1280 × 720 px" data-category="Animación / rotoscopia"
+                data-description="Una mano bajo la lluvia se cubre de líneas y manchas de color; la imagen se pinta y se deshace en el mismo gesto.">
+                <img id="motion-lluvia" src="imagenes/obra-03.jpg" alt="Fotograma de una rotoscopia: una mano bajo la lluvia con líneas blancas dibujadas sobre la piel." width="1280" height="720" loading="lazy" decoding="async">
+                <span class="work__view" aria-hidden="true">Ampliar ↗</span>
+              </button>
+              <button class="work__play" type="button" data-motion="lluvia" aria-label="Reproducir Rotoscopia de la lluvia">
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+            </div>
             <figcaption class="work__caption">
               <div><span class="work__num">03</span><h3 class="work__title">Rotoscopia de la lluvia</h3><p class="work__cat">Animación / rotoscopia</p></div>
               <span class="work__meta">2021</span>
@@ -456,41 +464,46 @@
           </figure>
 
           <figure class="work work--small" data-reveal>
-            <button class="work__button" type="button" aria-label="Ampliar: Retrato con burbujas"
-              data-title="Retrato con burbujas" data-year="2022" data-technique="Ilustración digital"
-              data-dimensions="872 × 650 px" data-category="Ilustración digital"
-              data-description="Un rostro de ojos cerrados y cabello ondulado se rodea de burbujas azules; el dibujo se vuelve superficie y refugio.">
-              <img src="imagenes/obra-05.jpg" alt="Ilustración de un rostro de ojos cerrados con cabello ondulado y burbujas azules sobre fondo coral." width="872" height="650" loading="lazy" decoding="async">
+            <button class="work__button" type="button" aria-label="Ampliar: El laberinto"
+              data-title="El laberinto" data-year="2025" data-technique="Ilustración digital"
+              data-dimensions="1600 × 1199 px" data-category="Ilustración digital"
+              data-description="Una figura sube a una mano de piedra y mira un laberinto infinito frente al mar; la salida es una forma de mirar.">
+              <img src="imagenes/obra-05.jpg" alt="Ilustración de una figura sobre una mano de piedra que mira un laberinto circular frente al mar." width="1600" height="1199" loading="lazy" decoding="async">
               <span class="work__view" aria-hidden="true">Ampliar ↗</span>
             </button>
             <figcaption class="work__caption">
-              <div><span class="work__num">05</span><h3 class="work__title">Retrato con burbujas</h3><p class="work__cat">Ilustración digital</p></div>
-              <span class="work__meta">2022</span>
+              <div><span class="work__num">05</span><h3 class="work__title">El laberinto</h3><p class="work__cat">Ilustración digital</p></div>
+              <span class="work__meta">2025</span>
             </figcaption>
           </figure>
 
           <figure class="work work--small" data-reveal style="--delay:.06s">
-            <button class="work__button" type="button" aria-label="Ampliar: Paisaje del puente"
-              data-title="Paisaje del puente" data-year="2022" data-technique="Pintura"
-              data-dimensions="870 × 611 px" data-category="Pintura"
-              data-description="Un puente de piedra, agua y vegetación; el paisaje como ejercicio de atención y color.">
-              <img src="imagenes/obra-06.jpg" alt="Pintura de un puente de piedra sobre un río, rodeado de vegetación y flores." width="870" height="611" loading="lazy" decoding="async">
+            <button class="work__button" type="button" aria-label="Ampliar: Sombras"
+              data-title="Sombras" data-year="2022" data-technique="Ilustración / dibujo digital"
+              data-dimensions="1200 × 1520 px" data-category="Ilustración"
+              data-description="Una figura diminuta camina bajo la sombra de un ser enorme; el miedo se vuelve paisaje y presencia.">
+              <img src="imagenes/obra-06.jpg" alt="Ilustración en blanco y negro de una mujer diminuta bajo la sombra de un ser enorme con ojos y sonrisa." width="1200" height="1520" loading="lazy" decoding="async">
               <span class="work__view" aria-hidden="true">Ampliar ↗</span>
             </button>
             <figcaption class="work__caption">
-              <div><span class="work__num">06</span><h3 class="work__title">Paisaje del puente</h3><p class="work__cat">Pintura</p></div>
+              <div><span class="work__num">06</span><h3 class="work__title">Sombras</h3><p class="work__cat">Ilustración</p></div>
               <span class="work__meta">2022</span>
             </figcaption>
           </figure>
 
           <figure class="work work--tall" data-reveal style="--delay:.12s">
-            <button class="work__button" type="button" aria-label="Ampliar: Pintar el tiempo"
-              data-title="Pintar el tiempo" data-year="2023" data-technique="Animación experimental"
-              data-dimensions="720 × 1280 px" data-category="Animación"
-              data-description="Retrato intervenido con líneas neón, textos manuscritos y formas que aparecen y desaparecen.">
-              <img src="imagenes/obra-07.jpg" alt="Fotograma vertical de una animación con una figura oscura rodeada de líneas neón verdes, violetas y naranjas." width="720" height="1120" loading="lazy" decoding="async">
-              <span class="work__view" aria-hidden="true">Ampliar ↗</span>
-            </button>
+            <div class="work__media">
+              <button class="work__button" type="button" aria-label="Ampliar: Pintar el tiempo"
+                data-title="Pintar el tiempo" data-year="2023" data-technique="Animación experimental"
+                data-dimensions="720 × 1280 px" data-category="Animación"
+                data-description="Retrato intervenido con líneas neón, textos manuscritos y formas que aparecen y desaparecen.">
+                <img id="motion-pintar" src="imagenes/obra-07.jpg" alt="Fotograma vertical de una animación con una figura oscura rodeada de líneas neón verdes, violetas y naranjas." width="720" height="1120" loading="lazy" decoding="async">
+                <span class="work__view" aria-hidden="true">Ampliar ↗</span>
+              </button>
+              <button class="work__play" type="button" data-motion="pintar" aria-label="Reproducir Pintar el tiempo">
+                <span class="play-icon" aria-hidden="true"></span>
+              </button>
+            </div>
             <figcaption class="work__caption">
               <div><span class="work__num">07</span><h3 class="work__title">Pintar el tiempo</h3><p class="work__cat">Animación</p></div>
               <span class="work__meta">2023</span>
@@ -904,6 +917,51 @@
       }
 
       /* Lightbox */
+      /* Motion previews for gallery animations */
+      const motionPlayers = {};
+      const setupMotion = (key, frames, imgId, button) => {
+        const img = document.getElementById(imgId);
+        if (!img || !button) return;
+        let index = 0, timer = null, playing = false, preloaded = false;
+        const preload = () => {
+          if (preloaded) return;
+          preloaded = true;
+          frames.forEach((src) => { const pre = new Image(); pre.src = src; });
+        };
+        button.addEventListener('pointerenter', preload, { once: true });
+        button.addEventListener('focus', preload, { once: true });
+        const render = (i) => { index = i; img.src = frames[i]; };
+        const stop = () => {
+          playing = false;
+          if (timer) clearInterval(timer);
+          timer = null;
+          button.classList.remove('is-playing');
+          button.setAttribute('aria-label', 'Reproducir animación');
+        };
+        const start = () => {
+          if (reduceMotion) {
+            render((index + 1) % frames.length);
+            return;
+          }
+          if (playing) return;
+          playing = true;
+          button.classList.add('is-playing');
+          button.setAttribute('aria-label', 'Pausar animación');
+          timer = setInterval(() => render((index + 1) % frames.length), 190);
+        };
+        button.addEventListener('click', (e) => {
+          e.stopPropagation();
+          preload();
+          if (playing) stop(); else start();
+        });
+        motionPlayers[key] = { stop };
+      };
+      const pintarFrames = Array.from({ length: 8 }, (_, i) => `imagenes/motion-pintar-${String(i + 1).padStart(2, '0')}.jpg`);
+      const lluviaFrames = Array.from({ length: 6 }, (_, i) => `imagenes/rain-${String(i + 1).padStart(2, '0')}.jpg`);
+      setupMotion('pintar', pintarFrames, 'motion-pintar', document.querySelector('[data-motion="pintar"]'));
+      setupMotion('lluvia', lluviaFrames, 'motion-lluvia', document.querySelector('[data-motion="lluvia"]'));
+      const stopAllMotion = () => Object.values(motionPlayers).forEach((player) => player.stop());
+
       const workButtons = $$('.work__button');
       const works = workButtons.map((btn) => {
         const img = btn.querySelector('img');
@@ -948,6 +1006,7 @@
       const openLightbox = (index) => {
         if (!dialog) return;
         fillLightbox(index);
+        stopAllMotion();
         dialog.showModal();
         document.body.classList.add('modal-open');
         $('.lightbox__close')?.focus();

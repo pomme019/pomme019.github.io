@@ -34,7 +34,7 @@ La web parte de la investigación de Isabel: animación experimental, redes que 
 - **Tipografías:** `Syne` (títulos) + `DM Sans` (texto).
 - **3 adjetivos:** sinestésico, riguroso, luminoso.
 - **Motivos:** redes de nodos, líneas dibujadas a mano, grano/scanline sutil, tipografía grande, mucho aire.
-- **Movimiento:** red animada en el hero (se desactiva con `prefers-reduced-motion`), flipbook de fotogramas, reveals suaves.
+- **Movimiento:** red animada en el hero (se desactiva con `prefers-reduced-motion`), flipbook de fotogramas y reproducción de GIF/MP4 como secuencias optimizadas en las fichas de animación.
 - **Tono:** sobrio y preciso; nada de “explora la relación entre”, “invita a la reflexión”, degradados morados genéricos ni tarjetas de cristal.
 
 ## Estructura del sitio
@@ -64,7 +64,7 @@ Originales (no mover ni renombrar):
 
 - `C:\Users\Juliana\Pictures\Mis cosas\grado\` — GIFs de animación experimental (2023).
 - `C:\Users\Juliana\Pictures\Master Granada\1. Materias\2. Medios Audiovisuales II\Trabajos\Final\` — storyboard, color, videos.
-- `C:\Users\Juliana\Pictures\Mis cosas\14.PNG`, `10.PNG`, `13.PNG` — pinturas e ilustración propias.
+- `C:\Users\Juliana\Pictures\Mis cosas\14.PNG`, `IMG_3040.PNG`, `sombras.jpg` — pinturas e ilustración propias.
 - `C:\Users\Juliana\Pictures\Mis cosas\2.mp4` — rotoscopia de la lluvia.
 - `C:\Users\Juliana\Pictures\Mis cosas\Grabado\` — serie de grabado.
 - `C:\Users\Juliana\Pictures\Mis cosas\Animaciones\` — contexto de animación.
@@ -78,11 +78,12 @@ Copias optimizadas en `imagenes/`:
 | `obra-02.jpg` | `Mis cosas/14.PNG` | El payaso |
 | `obra-03.jpg` | `Mis cosas/2.mp4`, frame 0.8 s | Rotoscopia de la lluvia (fotograma) |
 | `obra-04.jpg` | `Grabado/FinalMesa de trabajo 15.jpg` | Figuras sentadas |
-| `obra-05.jpg` | `Mis cosas/10.PNG` | Retrato con burbujas |
-| `obra-06.jpg` | `Mis cosas/13.PNG` | Paisaje del puente |
+| `obra-05.jpg` | `Mis cosas/IMG_3040.PNG` | El laberinto |
+| `obra-06.jpg` | `Mis cosas/sombras.jpg` | Sombras |
 | `obra-07.jpg` | `grado/1A.gif`, frame 7 | Pintar el tiempo |
 | `obra-08.jpg` | `Medios Audiovisuales II/.../story.png` | Investigación visual |
-| `rain-01…06.jpg` | `Mis cosas/2.mp4`, frames 0.2/0.8/1.8/2.5/3.2/6.5 s | Flipbook |
+| `motion-pintar-01…08.jpg` | `grado/1A.gif`, frames 0/2/3/5/6/8/9/11 | Ficha Pintar el tiempo |
+| `rain-01…06.jpg` | `Mis cosas/2.mp4`, frames 0.2/0.8/1.8/2.5/3.2/6.5 s | Flipbook y ficha Rotoscopia |
 | `sobre.jpg` | detalle de `grado/3.png` | Sobre |
 | `og.jpg` | recorte de `hero.jpg` | Open Graph |
 
@@ -113,7 +114,7 @@ Arrastrar la carpeta completa `pomme019.github.io` (con `index.html` e `imagenes
 
 ## Pendientes
 
-- [ ] Confirmar autoría de El payaso, Retrato con burbujas y Paisaje del puente.
+- [ ] Confirmar autoría de El payaso, El laberinto y Sombras.
 - [ ] Confirmar año, técnica y dimensiones de las obras nuevas.
 - [ ] Facilitar Instagram.
 - [ ] Institución y año del Grado en Bellas Artes.
