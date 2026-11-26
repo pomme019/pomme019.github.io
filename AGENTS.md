@@ -41,7 +41,7 @@ La web parte de la investigación de Isabel: animación experimental, redes que 
 
 - **Inicio:** nombre, disciplina, retrato/fotograma y una frase; red animada y marquesina de conceptos.
 - **Obra:** 8 piezas en cuadrícula editorial, con ficha y lightbox accesible.
-- **Reel:** extracto de *Rotoscopia de la lluvia* en flipbook de 6 fotogramas.
+- **Reel:** extracto de *Rotoscopia de la lluvia* en flipbook de 12 fotogramas.
 - **Sobre:** statement, bio y disciplinas, con un detalle de obra como imagen.
 - **CV:** formación, experiencia, proyectos, habilidades e idiomas; botón de impresión.
 - **Contacto:** email, ubicación y footer con crédito de IA.
@@ -82,8 +82,8 @@ Copias optimizadas en `imagenes/`:
 | `obra-06.jpg` | `Mis cosas/sombras.jpg` | Sombras |
 | `obra-07.jpg` | `grado/1A.gif`, frame 7 | Pintar el tiempo |
 | `obra-08.jpg` | `Medios Audiovisuales II/.../story.png` | Investigación visual |
-| `motion-pintar-01…08.jpg` | `grado/1A.gif`, frames 0/2/3/5/6/8/9/11 | Ficha Pintar el tiempo |
-| `rain-01…06.jpg` | `Mis cosas/2.mp4`, frames 0.2/0.8/1.8/2.5/3.2/6.5 s | Flipbook y ficha Rotoscopia |
+| `motion-pintar-01…16.jpg` | `grado/1A.gif`, frames 0–11 + 4 fundidos suaves | Ficha Pintar el tiempo |
+| `rain-01…12.jpg` | `Mis cosas/2.mp4`, frames 0.2/0.5/0.8/1.2/1.8/2.1/2.5/2.8/3.2/5.8/6.2/6.5 s | Flipbook y ficha Rotoscopia |
 | `sobre.jpg` | detalle de `grado/3.png` | Sobre |
 | `og.jpg` | recorte de `hero.jpg` | Open Graph |
 

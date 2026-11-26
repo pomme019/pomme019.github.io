@@ -76,7 +76,7 @@ Isabel Cock (Colombia, afincada en Granada) es artista visual y estudiante del M
 
 ### 03. Rotoscopia de la lluvia
 
-- Archivo: `imagenes/obra-03.jpg` (fotograma) y `imagenes/rain-01…06.jpg` (secuencia)
+- Archivo: `imagenes/obra-03.jpg` (fotograma) y `imagenes/rain-01…12.jpg` (secuencia)
 - Categoría: Animación / rotoscopia
 - Año: 2021
 - Técnica: Rotoscopia digital / animación
@@ -136,8 +136,8 @@ Isabel Cock (Colombia, afincada en Granada) es artista visual y estudiante del M
 
 ## Movimiento en la web
 
-- **Pintar el tiempo**: 8 fotogramas (`imagenes/motion-pintar-01…08.jpg`) extraídos de `grado/1A.gif`; se reproducen con el botón de play de la ficha.
-- **Rotoscopia de la lluvia**: 6 fotogramas (`imagenes/rain-01…06.jpg`) extraídos de `Mis cosas/2.mp4`; se reproducen en la ficha y en el reel.
+- **Pintar el tiempo**: 16 fotogramas (`imagenes/motion-pintar-01…16.jpg`): los 12 originales de `grado/1A.gif` + 4 fundidos suaves para alargar la secuencia; se reproducen con el botón de play de la ficha.
+- **Rotoscopia de la lluvia**: 12 fotogramas (`imagenes/rain-01…12.jpg`) extraídos de `Mis cosas/2.mp4`; se reproducen en la ficha y en el reel.
 - Los GIF/MP4 originales pesan entre 5 y 52 MB; no se incrustan para no romper la carga. La web usa secuencias de fotogramas optimizadas.
 
 ## Reel
@@ -145,9 +145,9 @@ Isabel Cock (Colombia, afincada en Granada) es artista visual y estudiante del M
 - Título: Rotoscopia de la lluvia / extracto
 - Año: 2021
 - Técnica: Rotoscopia digital / animación
-- Fotogramas: 6 (0.2, 0.8, 1.8, 2.5, 3.2 y 6.5 s del vídeo original)
+- Fotogramas: 12 (0.2, 0.5, 0.8, 1.2, 1.8, 2.1, 2.5, 2.8, 3.2, 5.8, 6.2 y 6.5 s del vídeo original)
 - Descripción: Una mano bajo el agua, líneas que se dibujan sobre la piel y un gato que florece en medio de la lluvia.
-- Archivos: `imagenes/rain-01.jpg` … `rain-06.jpg`
+- Archivos: `imagenes/rain-01.jpg` … `rain-12.jpg`
 
 ## Contacto
 

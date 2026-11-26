@@ -540,8 +540,8 @@
             <div class="reel__copy" data-reveal>
               <p class="section__index">02 / Reel</p>
               <h2>Rotoscopia de la lluvia</h2>
-              <p class="reel__desc">Una mano bajo el agua, líneas que se dibujan sobre la piel y un gato que florece en medio de la lluvia. Seis fotogramas de una rotoscopia experimental sobre el gesto de tocar el agua.</p>
-              <div class="reel__meta"><span>2021</span><span>Rotoscopia digital</span><span>6 fotogramas</span></div>
+              <p class="reel__desc">Una mano bajo el agua, líneas que se dibujan sobre la piel y un gato que florece en medio de la lluvia. Doce fotogramas de una rotoscopia experimental sobre el gesto de tocar el agua.</p>
+              <div class="reel__meta"><span>2021</span><span>Rotoscopia digital</span><span>12 fotogramas</span></div>
             </div>
             <div data-reveal style="--delay:.1s">
               <div class="reel__player" id="reel-player">
@@ -549,12 +549,12 @@
                 <button class="reel__play" id="reel-toggle" type="button" aria-label="Reproducir animación">
                   <span class="play-icon" aria-hidden="true"></span>
                 </button>
-                <span class="reel__counter" id="reel-counter" aria-hidden="true">01 / 06</span>
+                <span class="reel__counter" id="reel-counter" aria-hidden="true">01 / 12</span>
               </div>
               <div class="reel__ticks" aria-hidden="true">
-                <span class="is-on"></span><span></span><span></span><span></span><span></span><span></span>
+                <span class="is-on"></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
               </div>
-              <div class="reel__caption"><span>Rotoscopia de la lluvia / extracto, 2021</span><span>Fotogramas: 01–06</span></div>
+              <div class="reel__caption"><span>Rotoscopia de la lluvia / extracto, 2021</span><span>Fotogramas: 01–12</span></div>
             </div>
           </div>
         </div>
@@ -919,7 +919,7 @@
       /* Lightbox */
       /* Motion previews for gallery animations */
       const motionPlayers = {};
-      const setupMotion = (key, frames, imgId, button) => {
+      const setupMotion = (key, frames, imgId, button, interval = 190) => {
         const img = document.getElementById(imgId);
         if (!img || !button) return;
         let index = 0, timer = null, playing = false, preloaded = false;
@@ -947,7 +947,7 @@
           playing = true;
           button.classList.add('is-playing');
           button.setAttribute('aria-label', 'Pausar animación');
-          timer = setInterval(() => render((index + 1) % frames.length), 190);
+          timer = setInterval(() => render((index + 1) % frames.length), interval);
         };
         button.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -956,10 +956,10 @@
         });
         motionPlayers[key] = { stop };
       };
-      const pintarFrames = Array.from({ length: 8 }, (_, i) => `imagenes/motion-pintar-${String(i + 1).padStart(2, '0')}.jpg`);
-      const lluviaFrames = Array.from({ length: 6 }, (_, i) => `imagenes/rain-${String(i + 1).padStart(2, '0')}.jpg`);
-      setupMotion('pintar', pintarFrames, 'motion-pintar', document.querySelector('[data-motion="pintar"]'));
-      setupMotion('lluvia', lluviaFrames, 'motion-lluvia', document.querySelector('[data-motion="lluvia"]'));
+      const pintarFrames = Array.from({ length: 16 }, (_, i) => `imagenes/motion-pintar-${String(i + 1).padStart(2, '0')}.jpg`);
+      const lluviaFrames = Array.from({ length: 12 }, (_, i) => `imagenes/rain-${String(i + 1).padStart(2, '0')}.jpg`);
+      setupMotion('pintar', pintarFrames, 'motion-pintar', document.querySelector('[data-motion="pintar"]'), 95);
+      setupMotion('lluvia', lluviaFrames, 'motion-lluvia', document.querySelector('[data-motion="lluvia"]'), 120);
       const stopAllMotion = () => Object.values(motionPlayers).forEach((player) => player.stop());
 
       const workButtons = $$('.work__button');
@@ -1035,7 +1035,7 @@
       });
 
       /* Flipbook */
-      const reelFrames = Array.from({ length: 6 }, (_, i) => `imagenes/rain-${String(i + 1).padStart(2, '0')}.jpg`);
+      const reelFrames = Array.from({ length: 12 }, (_, i) => `imagenes/rain-${String(i + 1).padStart(2, '0')}.jpg`);
       const reelImg = $('#reel-img');
       const reelBtn = $('#reel-toggle');
       const reelCounter = $('#reel-counter');
@@ -1052,7 +1052,7 @@
         if (!reelImg) return;
         reelIndex = index;
         reelImg.src = reelFrames[index];
-        if (reelCounter) reelCounter.textContent = `${String(index + 1).padStart(2, '0')} / 06`;
+        if (reelCounter) reelCounter.textContent = `${String(index + 1).padStart(2, '0')} / ${reelFrames.length}`;
         reelTicks.forEach((tick, i) => tick.classList.toggle('is-on', i === index));
       };
       const stopReel = () => {
@@ -1067,7 +1067,7 @@
         reelPlaying = true;
         reelBtn?.classList.add('is-playing');
         reelBtn?.setAttribute('aria-label', 'Pausar animación');
-        reelTimer = setInterval(() => renderReel((reelIndex + 1) % reelFrames.length), 180);
+        reelTimer = setInterval(() => renderReel((reelIndex + 1) % reelFrames.length), 140);
       };
 
       renderReel(0);
